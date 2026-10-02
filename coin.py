@@ -14,3 +14,11 @@ class Coin:
     # Sets the starting side of the coin
     def __init__(self):
         self.__sideup = "Heads"
+        # Randomly changes the coin to Heads or Tails
+    def toss(self):
+        number = random.randint(0, 1)
+
+        if number == 0:
+            self.__sideup = "Heads"
+        else:
+            self.__sideup = "Tails"

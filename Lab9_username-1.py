@@ -52,3 +52,18 @@ def main():
         print("Player 2 has", player2.get_wallet(), "coins.")
           # Asks if the user wants to play another round
         play = input("\nDo you want to toss the coins? (y/n): ")
+        print("\n--- Final Score ---")
+    print("Player 1:", player1.get_wallet())
+    print("Player 2:", player2.get_wallet())
+
+    if player1.get_wallet() > player2.get_wallet():
+        print("Player 1 wins!")
+
+    elif player2.get_wallet() > player1.get_wallet():
+        print("Player 2 wins!")
+
+    else:
+        print("It's a draw!")
+
+
+main()

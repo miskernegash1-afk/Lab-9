@@ -6,7 +6,7 @@ Starter Code: No starter code used.
 Date: October 2, 2026
 """
 
-from player import Player
+from Player import Player
 
 # Runs the main game
 def main():

@@ -1,0 +1,17 @@
+"""
+Program Name: Match Coins Game
+Author: Misker Negash
+Purpose: This file creates the Player class for the Match Coins game.
+Starter Code: No starter code used.
+Date: October 2, 2026
+"""
+
+from coin import Coin
+
+# Creates the Player class
+class Player:
+ # Sets the player's name, starting wallet, and coin
+    def __init__(self, name):
+        self.__name = name
+        self.__wallet = 20
+        self.__coin = Coin()

@@ -15,3 +15,10 @@ class Player:
         self.__name = name
         self.__wallet = 20
         self.__coin = Coin()
+            # Tosses the player's coin
+    def toss_coin(self):
+        self.__coin.toss()
+
+    # Returns the result of the coin toss
+    def get_coin_side(self):
+        return self.__coin.get_sideup()

@@ -47,3 +47,8 @@ def main():
             player2.win_coin()
             player1.lose_coin()
             print("No Match! Player 2 wins a coin.")
+          # Displays each player's current wallet
+        print("\nPlayer 1 has", player1.get_wallet(), "coins.")
+        print("Player 2 has", player2.get_wallet(), "coins.")
+          # Asks if the user wants to play another round
+        play = input("\nDo you want to toss the coins? (y/n): ")

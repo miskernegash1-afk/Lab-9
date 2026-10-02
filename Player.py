@@ -22,3 +22,9 @@ class Player:
     # Returns the result of the coin toss
     def get_coin_side(self):
         return self.__coin.get_sideup()
+    # Adds one coin to the player's wallet
+    def win_coin(self):
+        self.__wallet += 1
+      # Removes one coin from the player's wallet
+    def lose_coin(self):
+        self.__wallet -= 1

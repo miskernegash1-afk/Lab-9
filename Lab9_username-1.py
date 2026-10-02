@@ -26,3 +26,14 @@ def main():
     while play == "y" or play == "Y":
 
         print("\nTossing...")
+                # Tosses both players' coins
+        player1.toss_coin()
+        player2.toss_coin()
+
+        # Gets the result of each coin
+        side1 = player1.get_coin_side()
+        side2 = player2.get_coin_side()
+
+        # Displays the toss results
+        print("Player 1 tossed", side1)
+        print("Player 2 tossed", side2)

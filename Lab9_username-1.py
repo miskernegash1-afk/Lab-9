@@ -37,3 +37,13 @@ def main():
         # Displays the toss results
         print("Player 1 tossed", side1)
         print("Player 2 tossed", side2)
+        # Player 1 wins if the coins match
+        if side1 == side2:
+            player1.win_coin()
+            player2.lose_coin()
+            print("It's a Match! Player 1 wins a coin.")
+         # Player 2 wins if the coins do not match
+        else:
+            player2.win_coin()
+            player1.lose_coin()
+            print("No Match! Player 2 wins a coin.")

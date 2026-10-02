@@ -28,3 +28,10 @@ class Player:
       # Removes one coin from the player's wallet
     def lose_coin(self):
         self.__wallet -= 1
+        # Returns the number of coins in the player's wallet
+    def get_wallet(self):
+        return self.__wallet
+
+    # Returns the player's name
+    def get_name(self):
+        return self.__name

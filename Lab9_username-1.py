@@ -19,3 +19,10 @@ def main():
     print("Player 2 has", player2.get_wallet(), "coins.")
 
     play = input("\nDo you want to toss the coins? (y/n): ")
+        # Asks the user if they want to play
+    play = input("\nDo you want to toss the coins? (y/n): ")
+
+    # Keeps the game running while the user enters y or Y
+    while play == "y" or play == "Y":
+
+        print("\nTossing...")
